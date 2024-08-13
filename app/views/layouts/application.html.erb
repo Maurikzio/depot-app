@@ -24,6 +24,9 @@
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+        <div class="mt-10 text-gray-500 text-xs">
+          <%= Time.now().strftime("%d/%m/%Y %k:%M") %>
+        </div>
       </nav>
       <main class="container mx-auto mt-4 px-5 flex">
         <%= yield %>
